@@ -1,0 +1,13 @@
+{
+    "python.pythonPath": "/home/abhinavsharmaminiconda/envs/mle-dev/bin/python",
+    "editor.formatOnSave": true,
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "100"
+    ],
+    "files.trimTrailingWhitespace": true
+}
