@@ -1,5 +1,9 @@
 import argparse
 import logging
+import pandas as pd
+import joblib
+import mlflow
+import mlflow.sklearn
 
 
 def setup_logging(log_level, log_path, no_console_log):
@@ -21,7 +25,26 @@ def score_model(model_path, data_path, output_path):
     # Add your model scoring logic here
     # Example: load model from model_path, load dataset from data_path
     #  score model, save results to output_path
+    mlflow.start_run(nested=True)
+    mlflow.log_param("model_path", model_path)
+    mlflow.log_param("data_pat", data_path)
+    mlflow.log_param("output_pat", output_path)
+
+    # Load the model from model_path
+    model = joblib.load(model_path)
+
+    # Load the dataset from data_path
+    data = pd.read_csv(data_path)
+
+    # Score the model
+    predictions = model.predict(data)
+
+    # Save the results to output_path
+    results = pd.DataFrame(predictions, columns=['predictions'])
+    results.to_csv(output_path, index=False)
+    mlflow.log_artifact(output_path)
     logging.info(f"Model scored successfully, results saved to {output_path}")
+    mlflow.end_run()
 
 
 if __name__ == "__main__":

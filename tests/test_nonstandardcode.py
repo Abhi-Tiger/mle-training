@@ -1,10 +1,10 @@
 import unittest
-from your_package import nonstandardcode
+
 
 class TestNonstandardCode(unittest.TestCase):
     def test_functionality(self):
-        # Add your test cases here
-        self.assertTrue(True)  # Example test
+        self.assertTrue(True)
 
-if _name_ == '_main_':
+
+if __name__ == '__main__':
     unittest.main()

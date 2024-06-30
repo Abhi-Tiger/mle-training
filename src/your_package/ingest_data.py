@@ -1,5 +1,7 @@
 import argparse
 import logging
+import mlflow.sklearn
+import pandas as pd
 
 
 def setup_logging(log_level, log_path, no_console_log):
@@ -18,9 +20,17 @@ def setup_logging(log_level, log_path, no_console_log):
 
 def ingest_data(output_path):
     logging.info("Starting data ingestion")
+    mlflow.start_run(nested=True)
+    mlflow.log_param("output_path", output_path)
+    DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
+    HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
+    df = pd.read_csv(HOUSING_URL)
+    df.to_csv(output_path, index=False)
+    mlflow.log_artifact(output_path)
     # Add your data ingestion logic here
     # Example: download dataset and save to output_path
     logging.info(f"Data ingested successfully and saved to {output_path}")
+    mlflow.end_run()
 
 
 if __name__ == "__main__":

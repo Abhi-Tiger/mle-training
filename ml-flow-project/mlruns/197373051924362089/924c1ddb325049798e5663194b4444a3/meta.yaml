@@ -1,0 +1,15 @@
+artifact_uri: /home/abhinavsharma/mle-training/ml-flow-project/mlruns/197373051924362089/924c1ddb325049798e5663194b4444a3/artifacts
+end_time: 1719660922810
+entry_point_name: ''
+experiment_id: '197373051924362089'
+lifecycle_stage: active
+run_id: 924c1ddb325049798e5663194b4444a3
+run_name: debonair-steed-242
+run_uuid: 924c1ddb325049798e5663194b4444a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719660893016
+status: 3
+tags: []
+user_id: abhinavsharma
