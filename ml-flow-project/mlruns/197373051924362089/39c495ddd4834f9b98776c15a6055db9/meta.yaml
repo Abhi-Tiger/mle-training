@@ -1,0 +1,15 @@
+artifact_uri: /home/abhinavsharma/mle-training/ml-flow-project/mlruns/197373051924362089/39c495ddd4834f9b98776c15a6055db9/artifacts
+end_time: 1719660941577
+entry_point_name: ''
+experiment_id: '197373051924362089'
+lifecycle_stage: active
+run_id: 39c495ddd4834f9b98776c15a6055db9
+run_name: luminous-shrike-137
+run_uuid: 39c495ddd4834f9b98776c15a6055db9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719660931047
+status: 3
+tags: []
+user_id: abhinavsharma

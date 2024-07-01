@@ -1,0 +1,15 @@
+artifact_uri: /home/abhinavsharma/mle-training/ml-flow-project/mlruns/197373051924362089/8961a2c8a5fb4b30b3b6377c35c548c9/artifacts
+end_time: 1719560608417
+entry_point_name: ''
+experiment_id: '197373051924362089'
+lifecycle_stage: active
+run_id: 8961a2c8a5fb4b30b3b6377c35c548c9
+run_name: clean-toad-722
+run_uuid: 8961a2c8a5fb4b30b3b6377c35c548c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719560593017
+status: 3
+tags: []
+user_id: abhinavsharma

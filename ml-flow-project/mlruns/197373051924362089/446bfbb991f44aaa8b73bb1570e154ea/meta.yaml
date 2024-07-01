@@ -1,0 +1,15 @@
+artifact_uri: /home/abhinavsharma/mle-training/ml-flow-project/mlruns/197373051924362089/446bfbb991f44aaa8b73bb1570e154ea/artifacts
+end_time: 1719560703189
+entry_point_name: ''
+experiment_id: '197373051924362089'
+lifecycle_stage: active
+run_id: 446bfbb991f44aaa8b73bb1570e154ea
+run_name: abrasive-cod-744
+run_uuid: 446bfbb991f44aaa8b73bb1570e154ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719560695567
+status: 3
+tags: []
+user_id: abhinavsharma

@@ -1,0 +1,15 @@
+artifact_uri: /home/abhinavsharma/mle-training/ml-flow-project/mlruns/197373051924362089/c28db777a485483eb17e22ac6727ac39/artifacts
+end_time: 1719560710380
+entry_point_name: ''
+experiment_id: '197373051924362089'
+lifecycle_stage: active
+run_id: c28db777a485483eb17e22ac6727ac39
+run_name: tasteful-hawk-268
+run_uuid: c28db777a485483eb17e22ac6727ac39
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719560703343
+status: 3
+tags: []
+user_id: abhinavsharma
